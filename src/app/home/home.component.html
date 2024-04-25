@@ -1,5 +1,16 @@
 <div class="nav-container">
-  <h1>Dashboard</h1>
+  <mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-form-field class="nav-selector">
+      <mat-label>Difficulty_Level</mat-label>
+      <mat-select> Difficulty_Level
+          <mat-option>Intermediate</mat-option>
+          <mat-option></mat-option>
+         
+      </mat-select>
+    </mat-form-field>
+  </mat-toolbar-row>
+</mat-toolbar>
   <div class="grid" >
       <mat-card class="recipe-card"*ngFor="let recipe of recipes">
         <mat-card-header>

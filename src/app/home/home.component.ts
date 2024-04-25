@@ -8,6 +8,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { Recipe,} from '../recipe';
 import { HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @Component({
   selector: 'app-home',
@@ -22,7 +26,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatCardModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers:[RecipeService]
 })
