@@ -1,0 +1,726 @@
+[
+    {
+        "recipe_name": "Crispy Sweet Chili Shrimp Rice Bowl  with green beans and roasted peanuts",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F12473%2Fdisplay_395780.006.01Sweet_Chili_Shrimp_Rice_Bowl_ecomm1-10-06-23-114901.jpg?ixlib=rails-1.1.0&auto=format&s=3ee6bb6aee0ac32f860bb0ec30fd0334",
+        "recipe_url": "https://www.homechef.com/meals/crispy-sweet-chili-shrimp-rice-bowl",
+        "Calories": "840",
+        "Carbohydrates": "120g",
+        "NetCarbs": "115g",
+        "Fat": "28g",
+        "Protein": "26g",
+        "Sodium": "1890mg",
+        "Prep_Time": "30-40 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Mild",
+        "Ingredients": [
+            {
+                "quantity": "8",
+                "unit": "oz.",
+                "ingredient": "Shrimp"
+            },
+            {
+                "quantity": "6",
+                "unit": "oz.",
+                "ingredient": "Trimmed Green Beans"
+            },
+            {
+                "quantity": "\u00be",
+                "unit": "cup",
+                "ingredient": "Jasmine Rice"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Sweet Chili Sauce"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Roasted Peanuts"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Green Onions"
+            },
+            {
+                "quantity": "3",
+                "unit": "Tbsp.",
+                "ingredient": "Cornstarch"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "oz.",
+                "ingredient": "Pickled Ginger"
+            },
+            {
+                "quantity": "\u2155",
+                "unit": "fl. oz.",
+                "ingredient": "Tamari Soy Sauce"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "tsp.",
+                "ingredient": "Cilantro Lime Pepper Salt"
+            }
+        ],
+        "id": 1
+    },
+    {
+        "recipe_name": "Chicken with Mushroom Gravy and garlic green beans",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F9838%2Fdisplay_4443ChickenwMushroomGravy__1_of_1_-b7c9ee09e51bd773a34740bd6146ba6d-b7c9ee09e51bd773a34740bd6146ba6d.jpg?ixlib=rails-1.1.0&auto=format&s=74b7b4f0d50eb76f1eae41dc704be32b",
+        "recipe_url": "https://www.homechef.com/meals/chicken-with-mushroom-gravy-standard",
+        "Calories": "520",
+        "Carbohydrates": "23g",
+        "NetCarbs": "18g",
+        "Fat": "27g",
+        "Protein": "43g",
+        "Sodium": "1530mg",
+        "Prep_Time": "25-35 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Not Spicy",
+        "Ingredients": [
+            {
+                "quantity": "13",
+                "unit": "oz.",
+                "ingredient": "Boneless Skinless Chicken Breasts"
+            },
+            {
+                "quantity": "12",
+                "unit": "oz.",
+                "ingredient": "Green Beans"
+            },
+            {
+                "quantity": "6",
+                "unit": "oz.",
+                "ingredient": "Cremini Mushrooms"
+            },
+            {
+                "quantity": "4",
+                "unit": "oz.",
+                "ingredient": "Light Cream"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Dark Brown Sherry Cooking Wine"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp.",
+                "ingredient": "Chicken Broth Concentrate"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Garlic Cloves"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Rosemary Sprig"
+            }
+        ],
+        "id": 2
+    },
+    {
+        "recipe_name": "Roasted Beet and Goat Cheese Risotto with pistachios",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F8829%2Fdisplay_5316RoastedBeetandGoatCheeseRisotto__1_of_1_-048787acf76bc5f2fe3a8322dc66d440-048787acf76bc5f2fe3a8322dc66d440.jpg?ixlib=rails-1.1.0&auto=format&s=b241ed2095eac60f289c2bde214fb923",
+        "recipe_url": "https://www.homechef.com/meals/roasted-beet-and-goat-cheese-risotto-standard",
+        "Calories": "700",
+        "Carbohydrates": "78g",
+        "NetCarbs": "70g",
+        "Fat": "34g",
+        "Protein": "19g",
+        "Sodium": "1370mg",
+        "Prep_Time": "35-45 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Not Spicy",
+        "Ingredients": [
+            {
+                "quantity": "12",
+                "unit": "oz.",
+                "ingredient": "Red Beet"
+            },
+            {
+                "quantity": "\u00be",
+                "unit": "cup",
+                "ingredient": "Arborio Rice"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "White Cooking Wine"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Grated Parmesan"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Goat Cheese"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Roasted Pistachios"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Butter"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp.",
+                "ingredient": "Mirepoix Broth Concentrate"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Garlic Cloves"
+            }
+        ],
+        "id": 3
+    },
+    {
+        "recipe_name": "Creamy Mushroom and Kale White Cheddar Biscuit Pie with peas and onions",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F8825%2Fdisplay_6720Mushroomkalebiscuitpie_Ecomm__1_of_1_-c516cfad1cd7036aca8e409ebd2b4400-c516cfad1cd7036aca8e409ebd2b4400.jpg?ixlib=rails-1.1.0&auto=format&s=7b2e94d1ef1e3af659e468c96dd73560",
+        "recipe_url": "https://www.homechef.com/meals/creamy-mushroom-and-kale-white-cheddar-biscuit-pie-standard",
+        "Calories": "580",
+        "Carbohydrates": "74g",
+        "NetCarbs": "68g",
+        "Fat": "27g",
+        "Protein": "20g",
+        "Sodium": "1880mg",
+        "Prep_Time": "40-50 min.",
+        "Difficulty_Level": "Easy",
+        "Spice_Level": "Not Spicy",
+        "Ingredients": [
+            {
+                "quantity": "10",
+                "unit": "oz.",
+                "ingredient": "Cremini Mushrooms"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Yellow Onion"
+            },
+            {
+                "quantity": "4",
+                "unit": "oz.",
+                "ingredient": "Buttermilk Biscuit Mix"
+            },
+            {
+                "quantity": "3",
+                "unit": "oz.",
+                "ingredient": "Peas"
+            },
+            {
+                "quantity": "3",
+                "unit": "oz.",
+                "ingredient": "Chopped Kale"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Light Cream Cheese"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Shredded White Cheddar Cheese"
+            },
+            {
+                "quantity": "4",
+                "unit": "tsp.",
+                "ingredient": "Mirepoix Broth Concentrate"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp.",
+                "ingredient": "Roasted Garlic Peppercorn Rub"
+            }
+        ],
+        "id": 4
+    },
+    {
+        "recipe_name": "Stuffed Portobello Mushroom Campanelle Marinara with zucchini and Parmesan cheese",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F7291%2Fdisplay_7291StuffedPortobelloMushroomCampanelle_Ecomm__1_of_2.jpg?ixlib=rails-1.1.0&auto=format&s=4f852fa3388382fb50c5681160ff9b03",
+        "recipe_url": "https://www.homechef.com/meals/stuffed-portobello-mushroom-campanelle-marinara",
+        "Calories": "580",
+        "Carbohydrates": "78g",
+        "NetCarbs": "73g",
+        "Fat": "18g",
+        "Protein": "26g",
+        "Sodium": "1370mg",
+        "Prep_Time": "30-40 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Not Spicy",
+        "Ingredients": [
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Roma Tomatoes"
+            },
+            {
+                "quantity": "6",
+                "unit": "oz.",
+                "ingredient": "Campanelle Pasta"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Portobello Mushrooms"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Zucchini"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Shredded Mozzarella"
+            },
+            {
+                "quantity": "2",
+                "unit": "Tbsp.",
+                "ingredient": "Tomato Paste"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Grated Parmesan"
+            },
+            {
+                "quantity": "\u00bc",
+                "unit": "cup",
+                "ingredient": "Italian Panko Blend"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp.",
+                "ingredient": "Chimichurri Seasoning"
+            }
+        ],
+        "id": 5
+    },
+    {
+        "recipe_name": "Cajun Sausage Stuffed Peppers and Remoulade Sauce with queso fresco and grape tomatoes",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F6487%2Fdisplay_6487CajunSausageStuffedPeppersandRemouladeSauce_Ecomm__1_of_1_.jpg?ixlib=rails-1.1.0&auto=format&s=4b8768db217238562f51191030710577",
+        "recipe_url": "https://www.homechef.com/meals/cajun-sausage-stuffed-peppers-and-remoulade-sauce",
+        "Calories": "620",
+        "Carbohydrates": "32g",
+        "NetCarbs": "26g",
+        "Fat": "44g",
+        "Protein": "30g",
+        "Sodium": "1690mg",
+        "Prep_Time": "30-40 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Spicy",
+        "Ingredients": [
+            {
+                "quantity": "3",
+                "unit": "",
+                "ingredient": "Poblano Peppers"
+            },
+            {
+                "quantity": "8",
+                "unit": "oz.",
+                "ingredient": "Italian Pork Sausage Links"
+            },
+            {
+                "quantity": "4",
+                "unit": "oz.",
+                "ingredient": "Grape Tomatoes"
+            },
+            {
+                "quantity": "3",
+                "unit": "oz.",
+                "ingredient": "Corn Kernels"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Remoulade"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Queso Fresco"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Green Onions"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Garlic Cloves"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp.",
+                "ingredient": "Cajun Seasoning"
+            }
+        ],
+        "id": 6
+    },
+    {
+        "recipe_name": "Sausage and Mushroom Stuffed Peppers with pepperoncini",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F12097%2Fdisplay_4487ItalianSausageandMushroomStuffedPeppersReshoot__1_of_1_-680cb0e3b7f829c7d0db9d7d2343b474-680cb0e3b7f829c7d0db9d7d2343b474.jpg?ixlib=rails-1.1.0&auto=format&s=588fb00bb9d32abc33571729fd7c9202",
+        "recipe_url": "https://www.homechef.com/meals/sausage-and-mushroom-stuffed-peppers-ccfca828-b273-4a5a-aa82-8a980369f934",
+        "Calories": "540",
+        "Carbohydrates": "28g",
+        "NetCarbs": "22g",
+        "Fat": "36g",
+        "Protein": "33g",
+        "Sodium": "1670mg",
+        "Prep_Time": "30-40 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Mild",
+        "Ingredients": [
+            {
+                "quantity": "3",
+                "unit": "",
+                "ingredient": "Green Bell Peppers"
+            },
+            {
+                "quantity": "8",
+                "unit": "oz.",
+                "ingredient": "Cremini Mushrooms"
+            },
+            {
+                "quantity": "8",
+                "unit": "oz.",
+                "ingredient": "Italian Sausage Links"
+            },
+            {
+                "quantity": "6",
+                "unit": "fl. oz.",
+                "ingredient": "Marinara Sauce"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Shredded Mozzarella"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Pepperoncini"
+            }
+        ],
+        "id": 7
+    },
+    {
+        "recipe_name": "Piri Piri Turkey Stuffed Pepper with creamy cucumber sauce",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F12181%2Fdisplay_5887PiriPiriPeppers_Ecomm__1_of_1_-67261eb5cd219baec29399c8fb0b0aec-67261eb5cd219baec29399c8fb0b0aec.jpg?ixlib=rails-1.1.0&auto=format&s=4b3910be0e66bd28412f2b975b05e364",
+        "recipe_url": "https://www.homechef.com/meals/piri-piri-turkey-stuffed-pepper-2e4ef89a-f497-4023-826b-a7ccb3f398cb",
+        "Calories": "480",
+        "Carbohydrates": "24g",
+        "NetCarbs": "18g",
+        "Fat": "28g",
+        "Protein": "39g",
+        "Sodium": "1230mg",
+        "Prep_Time": "30-40 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Spicy",
+        "Ingredients": [
+            {
+                "quantity": "12",
+                "unit": "oz.",
+                "ingredient": "Ground Turkey"
+            },
+            {
+                "quantity": "3",
+                "unit": "",
+                "ingredient": "Poblano Peppers"
+            },
+            {
+                "quantity": "4",
+                "unit": "oz.",
+                "ingredient": "Grape Tomatoes"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Persian Cucumber"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Lime"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Sour Cream"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Shallot"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Feta Cheese Crumbles"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp.",
+                "ingredient": "Chicken Demi-Glace Concentrate"
+            },
+            {
+                "quantity": "2",
+                "unit": "tsp.",
+                "ingredient": "Portuguese Piri Piri Seasoning"
+            }
+        ],
+        "id": 8
+    },
+    {
+        "recipe_name": "Teriyaki Charred Broccoli and Shiitake Mushrooms with sesame noodles",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F3526%2Fdisplay_3526TeriyakiCharredBroc_Shiitake__1_of_1_-ea204baed03ae5ca67eaf869f42c971d-ea204baed03ae5ca67eaf869f42c971d.jpg?ixlib=rails-1.1.0&auto=format&s=866145626ec6e656180b29ae7e9b9bd0",
+        "recipe_url": "https://www.homechef.com/meals/teriyaki-charred-broccoli-and-shiitake-mushrooms",
+        "Calories": "560",
+        "Carbohydrates": "94g",
+        "NetCarbs": "83g",
+        "Fat": "24g",
+        "Protein": "19g",
+        "Sodium": "1520mg",
+        "Prep_Time": "30-40 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Mild",
+        "Ingredients": [
+            {
+                "quantity": "8",
+                "unit": "oz.",
+                "ingredient": "Broccoli Florets"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Red Bell Pepper"
+            },
+            {
+                "quantity": "6",
+                "unit": "oz.",
+                "ingredient": "Linguine"
+            },
+            {
+                "quantity": "4",
+                "unit": "oz.",
+                "ingredient": "Teriyaki Glaze"
+            },
+            {
+                "quantity": "3",
+                "unit": "oz.",
+                "ingredient": "Shiitake Mushrooms"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Green Onions"
+            },
+            {
+                "quantity": "\u00bd",
+                "unit": "oz.",
+                "ingredient": "Toasted Sesame Oil"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp.",
+                "ingredient": "Sriracha"
+            },
+            {
+                "quantity": "1",
+                "unit": "tsp.",
+                "ingredient": "Multicolor Sesame Seeds"
+            }
+        ],
+        "id": 9
+    },
+    {
+        "recipe_name": "Grilled BBQ Tofu Sandwich with Fuji apple slaw",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F3474%2Fdisplay_homechef_BBQ_Tofu_Po_Boy__7_of_8_-79a847c8b248472eb5e0fc4bdbed1550-79a847c8b248472eb5e0fc4bdbed1550.jpg?ixlib=rails-1.1.0&auto=format&s=24789745b828ef3bd1db187298566673",
+        "recipe_url": "https://www.homechef.com/meals/grilled-bbq-tofu-sandwich",
+        "Calories": "620",
+        "Carbohydrates": "102g",
+        "NetCarbs": "94g",
+        "Fat": "9g",
+        "Protein": "29g",
+        "Sodium": "2430mg",
+        "Prep_Time": "25-35 min.",
+        "Difficulty_Level": "Easy",
+        "Spice_Level": "Mild",
+        "Ingredients": [
+            {
+                "quantity": "12",
+                "unit": "oz.",
+                "ingredient": "Extra Firm Tofu"
+            },
+            {
+                "quantity": "2",
+                "unit": "",
+                "ingredient": "Mini Baguettes"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Fuji Apple"
+            },
+            {
+                "quantity": "4",
+                "unit": "oz.",
+                "ingredient": "Shredded Red Cabbage"
+            },
+            {
+                "quantity": "1\u00bd",
+                "unit": "oz.",
+                "ingredient": "BBQ Sauce"
+            },
+            {
+                "quantity": "2",
+                "unit": "Tbsp.",
+                "ingredient": "Smokehouse Maple Seasoning"
+            }
+        ],
+        "id": 10
+    },
+    {
+        "recipe_name": "Roasted Sweet Potato Tortilla Soup with avocado crema",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F11462%2Fdisplay_6728RoastedSweetPotatoTortillaSoup_Ecomm__1_of_1_-1bfae04c51db8edab3854e44f7374f14-1bfae04c51db8edab3854e44f7374f14.jpg?ixlib=rails-1.1.0&auto=format&s=88ddc4e71c8401909d3447319716cac2",
+        "recipe_url": "https://www.homechef.com/meals/roasted-sweet-potato-tortilla-soup-6359a8e3-ee31-4a6b-9562-e76a5e2b7e53",
+        "Calories": "600",
+        "Carbohydrates": "92g",
+        "NetCarbs": "78g",
+        "Fat": "23g",
+        "Protein": "10g",
+        "Sodium": "1820mg",
+        "Prep_Time": "30-40 min.",
+        "Difficulty_Level": "Intermediate",
+        "Spice_Level": "Spicy",
+        "Ingredients": [
+            {
+                "quantity": "18",
+                "unit": "oz.",
+                "ingredient": "Sweet Potato"
+            },
+            {
+                "quantity": "5",
+                "unit": "oz.",
+                "ingredient": "Corn Kernels"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Poblano Pepper"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Lime"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Guacamole"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Shallot"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Sour Cream"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Tortilla Strips"
+            },
+            {
+                "quantity": "4",
+                "unit": "tsp.",
+                "ingredient": "Mirepoix Broth Concentrate"
+            },
+            {
+                "quantity": "1",
+                "unit": "Tbsp.",
+                "ingredient": "Taco Seasoning"
+            }
+        ],
+        "id": 11
+    },
+    {
+        "recipe_name": "Mushroom and Pepper Fajita Tacos with pickled red onions",
+        "recipe_photo": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F12163%2Fdisplay_4821MushroomandPepperFajitaTacosReshoot__1_of_1_-682d60f1139207935394df6f3c673fc2-682d60f1139207935394df6f3c673fc2.jpg?ixlib=rails-1.1.0&auto=format&s=0313c8233e625c2923849623776c0e7a",
+        "recipe_url": "https://www.homechef.com/meals/mushroom-and-pepper-fajita-tacos-0dfe0ba7-6e80-454e-8d3d-8d7ecfb5a294",
+        "Calories": "520",
+        "Carbohydrates": "67g",
+        "NetCarbs": "61g",
+        "Fat": "23g",
+        "Protein": "16g",
+        "Sodium": "1560mg",
+        "Prep_Time": "25-35 min.",
+        "Difficulty_Level": "Easy",
+        "Spice_Level": "Mild",
+        "Ingredients": [
+            {
+                "quantity": "8",
+                "unit": "oz.",
+                "ingredient": "Cremini Mushrooms"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Red Onion"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Red Bell Pepper"
+            },
+            {
+                "quantity": "6",
+                "unit": "",
+                "ingredient": "Small Flour Tortillas"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Poblano Pepper"
+            },
+            {
+                "quantity": "1",
+                "unit": "",
+                "ingredient": "Lime"
+            },
+            {
+                "quantity": "2",
+                "unit": "oz.",
+                "ingredient": "Sour Cream"
+            },
+            {
+                "quantity": "1",
+                "unit": "oz.",
+                "ingredient": "Queso Fresco"
+            },
+            {
+                "quantity": "1",
+                "unit": "Tbsp.",
+                "ingredient": "Chile and Cumin Rub"
+            }
+        ],
+        "id": 12
+    }
+]
