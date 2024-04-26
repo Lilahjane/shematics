@@ -1,25 +1,52 @@
 <div class="nav-container">
   <h1>Dashboard</h1>
-  <div class="grid" >
-      <mat-card class="recipe-card"*ngFor="let recipe of recipes">
-        <mat-card-header>
-          <mat-card-title>{{ recipe.recipe_name }}</mat-card-title>
-          <mat-card-subtitle>Difficulty: {{ recipe.Difficulty_Level }}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image [src]="recipe.recipe_photo" alt="Recipe photo" />
-        <mat-card-content>
-          <div>{{ recipe.Calories }} Calories</div>
-          <div>Preparation: {{ recipe.Prep_Time }}</div>
-          <div>Spice: {{ recipe.Spice_Level }}</div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button>ADD</button>
-          <button mat-raised-button color="primary">VIEW</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+  <div class="grid">
+    <mat-card class="recipe-card" *ngFor="let recipe of visibleRecipes">
+      <mat-card-header>
+        <mat-card-title>{{ recipe.recipe_name }}</mat-card-title>
+        <mat-card-subtitle>Difficulty: {{ recipe.Difficulty_Level }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="recipe.recipe_photo" alt="Recipe photo" />
+      <mat-card-content>
+        <div>{{ recipe.Calories }} Calories</div>
+        <div>Preparation: {{ recipe.Prep_Time }}</div>
+        <div>Spice: {{ recipe.Spice_Level }}</div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button>ADD</button>
+        <button mat-raised-button color="primary" style="margin-left: 8px" (click)="viewRecipe(recipe)">
+          VIEW
+        </button>
+      </mat-card-actions>
+    </mat-card>
     <div class="pagination">
-      @for (page of pages; track $index) {
+      <mat-paginator
+        [length]="recipes.length"
+        [pageSizeOptions]="[10, 25, 50]"
+        aria-label="Select page size"
+        (page)="handlePageChange($event)"
+      ></mat-paginator>
+    </div><!--pagination-->
+  </div><!--grid-->
+  </div><!--nav-->
+ 
+
+
+
+
+
+
+  <!-- <div class="pagination">
+    <mat-paginator
+      [length]="recipes.length"
+      [pageSizeOptions]="[10, 25, 50]"
+      aria-label="Select page size"
+      (page)="handlePageChange($event)"
+    ></mat-paginator>
+  </div> -->
+
+  <!-- <div class="pagination">
+    @for (page of pages; track $index) {
       <div
         class="page-link accent-color"
         [ngClass]="{ 'active-page': page === activePage }"
@@ -27,6 +54,6 @@
       >
         {{ page }}
       </div>
-      }
-    </div>
-</div>
+    }
+  </div> -->
+
