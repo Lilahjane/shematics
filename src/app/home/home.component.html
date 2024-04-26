@@ -1,4 +1,26 @@
-<div class="nav-container">
+
+<div class="recipe-cards-wrapper">
+  <div class="recipe-grid">
+    <div *ngFor="let recipe of visibleRecipes; trackBy: $index" class="recipe-card">
+      <mat-card-header [ariaLabel]="'test'">
+        <mat-card-title>{{ recipe.recipe_name }}</mat-card-title>
+        <mat-card-subtitle>Difficulty: {{ recipe.DifficultyLevel }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="recipe.recipe_photo" alt="Recipe photo" />
+      <mat-card-content>
+        <div>{{ recipe.Calories }} Calories</div>
+        <div>Preparation: {{ recipe.PrepTime }}</div>
+        <div>Spice: {{ recipe.SpiceLevel }}</div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button>ADD</button>
+        <button mat-raised-button color="primary" style="margin-left: 8px" (click)="viewRecipe(recipe)">VIEW</button>
+      </mat-card-actions>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="nav-container">
   <h1>Dashboard</h1>
   <div class="grid" >
       <mat-card class="recipe-card"*ngFor="let recipe of recipes">
@@ -18,4 +40,4 @@
         </mat-card-actions>
       </mat-card>
     </div>
-</div>
+</div> -->
