@@ -1,5 +1,45 @@
+<mat-toolbar color="primary" class="toolbar" >
+    <mat-form-field>
+      <mat-label>Prep_Time</mat-label>
+      <mat-select>
+        <mat-option value="option1">5-15 min.</mat-option>
+        <mat-option value="option2">20-35 min.</mat-option>
+        <mat-option value="option3">30-45 min.</mat-option>
+        <mat-option value="option4">40-60 min.</mat-option>
+      </mat-select>
+    </mat-form-field>
+  <span class="example-spacer"></span>
+  <mat-form-field>
+    <mat-label>Spice_Level</mat-label>
+    <mat-select>
+      <mat-option value="option1">Not spicy</mat-option>
+      <mat-option value="option2">Mild</mat-option>
+      <mat-option value="option3">Medium</mat-option>
+      <mat-option value="option4">Spicy</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <span class="example-spacer"></span>
+  <mat-form-field>
+    <mat-label>Choose an option</mat-label>
+    <mat-select>
+      <mat-option value="option1">Easy</mat-option>
+      <mat-option value="option2">Intermediate</mat-option>
+      <mat-option value="option3">Expert</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <span class="example-spacer"></span>
+  <mat-form-field>
+    <mat-label>Choose an option</mat-label>
+    <mat-select>
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2">hellp</mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field>
+ 
+</mat-toolbar>
+
 <div class="nav-container">
-  <h1>Dashboard</h1>
   <div class="grid">
     <mat-card class="recipe-card" *ngFor="let recipe of visibleRecipes">
       <mat-card-header>
@@ -13,7 +53,6 @@
         <div>Spice: {{ recipe.Spice_Level }}</div>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-raised-button>ADD</button>
         <button mat-raised-button color="primary" style="margin-left: 8px" (click)="viewRecipe(recipe)">
           VIEW
         </button>
@@ -22,7 +61,7 @@
     <div class="pagination">
       <mat-paginator
         [length]="recipes.length"
-        [pageSizeOptions]="[10, 25, 50]"
+        [pageSize]="12"
         aria-label="Select page size"
         (page)="handlePageChange($event)"
       ></mat-paginator>

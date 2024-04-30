@@ -10,6 +10,11 @@ import { Recipe,} from '../recipe';
 import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatToolbar } from '@angular/material/toolbar';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -24,7 +29,13 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatCardModule,
     CommonModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatToolbar
   ],
   providers:[RecipeService]
 })
@@ -76,65 +87,3 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl(`recipe-details/${recipe.id}`);
   }
 }
-
-// export class HomeComponent implements OnInit {
-//   private service = inject(RecipeService);
-//   private router = inject(Router);
-//   private recipesPerPage: number = 12;
-//   private totalPages!: number;
-//   private recipes: Recipe[] = [];
-//   public pages: number[] = [];
-//   public activePage: number = 1;
-//   public visibleRecipes: Recipe[] = [];
-
-//   ngOnInit(): void {
-//     this.gerRecipes();
-//   }
-
-//   private gerRecipes(): void {
-//     this.service.getAllRecipes().subscribe((recipes) => {
-//       this.initPagination(recipes);
-//       this.setRecipes(recipes);
-//       this.setPagination();
-//     });
-//   }
-
-//   private initPagination(recipes: Recipe[]) {
-//     this.totalPages = Math.ceil(recipes.length / this.recipesPerPage);
-//     if (this.totalPages > 0) {
-//       this.pages = [...Array(this.totalPages).keys()].map((i) => i + 1);
-//     }
-//   }
-
-//   private setRecipes(recipes: Recipe[]) {
-//     this.recipes = recipes.map((item, index) => {
-//       return { ...item, id: index + 1 };
-//     });
-//   }
-
-//   private setPagination() {
-//     const paginationStart = (this.activePage - 1) * this.recipesPerPage;
-//     const paginationEnd = paginationStart + this.recipesPerPage;
-//     this.visibleRecipes = this.recipes.slice(paginationStart, paginationEnd);
-
-//     this.setInvisibleGridItemsIfNeeded(paginationEnd);
-//   }
-
-//   private setInvisibleGridItemsIfNeeded(paginationEnd: number) {
-//     const diff = paginationEnd - this.recipes.length;
-//     if (diff > 0) {
-//       for (let i = 0; i < diff; i++) {
-//         this.visibleRecipes.push({ class: 'invisible' } as Recipe);
-//       }
-//     }
-//   }
-
-//   public goToPage(pageIndex: number) {
-//     this.activePage = pageIndex;
-//     this.setPagination();
-//   }
-
-//   public viewRecipe(recipe: Recipe) {
-//     this.router.navigateByUrl(`recipe-details/${recipe.id}`);
-//   }
-// }

@@ -1,0 +1,39 @@
+(5-10, 10-15) 5-15 min.
+(20-30, 25-35) 20-35 min.
+(30-40,35-45,) 30-45 min.
+(40-50,45-55,50-60) 40-60 min.
+
+5-10
+10-15
+20-30
+25-35
+30-40
+35-45
+40-50
+45-55
+50-60
+
+my json has the time values 5-10 min.
+10-15 min.
+20-30 min.
+25-35 min.
+30-40 min.
+35-45 min.
+40-50 min.
+45-55 min.
+50-60 and I want to create a selector to display the json objects with matching values I also combined some values to make it easier to select the combined values are (5-10 min., 10-15 min.) 5-15 min.
+(20-30 min., 25-35 min.) 20-35 min.
+(30-40 min.,35-45 min.) 30-45 min.
+(40-50 min.,45-55 min.,50-60 min.) 40-60 min. how would I code my selectors in angular to make my selectors function
+
+Spice_Level
+Not spicy
+Mild
+Medium
+Spicy
+
+
+Difficulty_Level
+Easy
+Intermediate
+Expert

@@ -1,0 +1,5 @@
+<div *ngIf="ingredients.length > 0">
+  <h2>Grocery List</h2>
+  </div>
+
+<app-recipe-details (ingredientAddedToGroceryList)="ingredients = $event"></app-recipe-details>
