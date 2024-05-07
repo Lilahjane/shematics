@@ -1,13 +1,13 @@
-<mat-toolbar color="primary" class="toolbar" >
-    <mat-form-field>
-      <mat-label>Prep_Time</mat-label>
-      <mat-select>
-        <mat-option value="option1">5-15 min.</mat-option>
-        <mat-option value="option2">20-35 min.</mat-option>
-        <mat-option value="option3">30-45 min.</mat-option>
-        <mat-option value="option4">40-60 min.</mat-option>
-      </mat-select>
-    </mat-form-field>
+<mat-toolbar color="primary" class="toolbar">
+  <mat-form-field>
+    <mat-label>Prep_Time</mat-label>
+    <mat-select>
+      <mat-option value="option1">5-15 min.</mat-option>
+      <mat-option value="option2">20-35 min.</mat-option>
+      <mat-option value="option3">30-45 min.</mat-option>
+      <mat-option value="option4">40-60 min.</mat-option>
+    </mat-select>
+  </mat-form-field>
   <span class="example-spacer"></span>
   <mat-form-field>
     <mat-label>Spice_Level</mat-label>
@@ -36,12 +36,52 @@
       <mat-option value="option3">Option 3</mat-option>
     </mat-select>
   </mat-form-field>
- 
 </mat-toolbar>
 
-<div class="nav-container">
+<mat-accordion multi>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Macros</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <mat-slider min="200" max="500" style="flex: 1">
+          <input value="300" matSliderStartThumb>
+          <input value="400" matSliderEndThumb>
+        </mat-slider>
+        <mat-slider min="200" max="500" style="flex: 1">
+          <input value="300" matSliderStartThumb>
+          <input value="400" matSliderEndThumb>
+        </mat-slider>
+        <mat-slider min="200" max="500" style="flex: 1">
+          <input value="300" matSliderStartThumb>
+          <input value="400" matSliderEndThumb>
+        </mat-slider>
+        <mat-slider min="200" max="500" style="flex: 1">
+          <input value="300" matSliderStartThumb>
+          <input value="400" matSliderEndThumb>
+        </mat-slider>
+        <mat-slider min="200" max="500" style="flex: 1">
+          <input value="300" matSliderStartThumb>
+          <input value="400" matSliderEndThumb>
+        </mat-slider>
+        <mat-slider min="200" max="500" style="flex: 1">
+          <input value="300" matSliderStartThumb>
+          <input value="400" matSliderEndThumb>
+        </mat-slider>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<!--broken: solution unknown??!?-->
+  <!--dreams of code working have 2 toolbar rows one for macro sliders and other for selctors (how to clear selectors go back to no selectors selected)
+  so macros have mg wtv so... format csv coloumn edit reformat all remove letters get mean median mode no <-*-*-*-*-*> that makes since how do I do tjat not a clue-->
+
+
+<div class="nav-container"><!--nav-->
   <div class="grid">
-    <mat-card class="recipe-card" *ngFor="let recipe of visibleRecipes">
+    <mat-card class="recipe-card" *ngFor="let recipe of visibleRecipes"> <!--google ngrx docs-->
       <mat-card-header>
         <mat-card-title>{{ recipe.recipe_name }}</mat-card-title>
         <mat-card-subtitle>Difficulty: {{ recipe.Difficulty_Level }}</mat-card-subtitle>
@@ -53,12 +93,12 @@
         <div>Spice: {{ recipe.Spice_Level }}</div>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-raised-button color="primary" style="margin-left: 8px" (click)="viewRecipe(recipe)">
-          VIEW
+        <button mat-raised-button color="primary" style="margin-left: 8px" (click)="viewRecipe(recipe)"> <!--blackbox you suck at explaining stuff WHAT IS THIS DOING -->
+          VIEW <!--YEA VIEW IT YOU DONT HAVE A CHOICE-->
         </button>
       </mat-card-actions>
     </mat-card>
-    <div class="pagination">
+    <div class="pagination"><!--start div pagination-->
       <mat-paginator
         [length]="recipes.length"
         [pageSize]="12"

@@ -13,16 +13,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './grocery-list.component.scss',
   providers: [GroceryService]
 })
-export class GroceryListComponent implements OnInit {
-  @Input() ingredients: Ingredient[] = [];
+export class GroceryListComponent {
+  // @Input() ingredients: Ingredient[] = [];
 
-  constructor(private groceryService: GroceryService) {}
+}
 
-    ngOnInit() {
-      this.recipeDetailsComponent.ingredientAddedToGroceryList.subscribe(ingredients => {
-        this.ingredients = ingredients;
-      });
-    }
-    
-  }
+  //so this is me trying to come up with a way to connect grocerylist too view because the add button is supposed to display a snackbar THE ONLY THING THAT WORKS RIGHT NOW saying {{Recipe.recipe_name}} has been added which it does 
+  
 

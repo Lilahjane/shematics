@@ -35,13 +35,13 @@
   <button mat-raised-button color="accent" [routerLink]="['/home']">
     Back
   </button>
-  @if(recipe) {
+  
   <div class="details-wrapper">
-    <button mat-raised-button (click)="addIngredientsToGroceryList()"><!--so this button should be clicked to add "ingredients" to grocery list-->
-      Add Ingredients
+    <button mat-raised-button>
+     Add Ingredients
     </button>
   </div>
 
   <button mat-raised-button (click)="goToSite()">Cook!</button>
-  }
+
 </div>

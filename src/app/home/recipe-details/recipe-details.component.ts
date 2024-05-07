@@ -1,14 +1,21 @@
-import { Component, OnInit, inject, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+//unsure
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+//unsure
 import { RecipeService } from '../../recipe.service';
+//RecipService is how my app is able to use my json
 import { MatTableModule } from '@angular/material/table';
+//displays ingredients as table
 import { HttpClientModule } from '@angular/common/http';
+//unsure what this does
 import { Recipe } from '../../recipe';
+//interface
 import { CommonModule } from '@angular/common';
+//unsure
 import { MatButtonModule } from '@angular/material/button';
+//mat component
 import { Ingredient } from '../../ingredient';
-import { GroceryService } from '../../grocery.service';
-import { MatSnackBar } from '@angular/material/snack-bar';
+//interface
 
 @Component({
   selector: 'app-recipe-details',
@@ -20,20 +27,17 @@ import { MatSnackBar } from '@angular/material/snack-bar';
     MatButtonModule,
     MatTableModule,
   ],
-  providers: [RecipeService, GroceryService],
+  providers: [RecipeService],
   templateUrl: './recipe-details.component.html',
-  styleUrls: ['./recipe-details.component.scss'],
+  styleUrl: './recipe-details.component.scss',
 })
 export class RecipeDetailsComponent implements OnInit {
   private routerParams = inject(ActivatedRoute);
   private router = inject(Router);
   private service = inject(RecipeService);
-  private snackBar = inject(MatSnackBar);
   public recipe!: Recipe;
   public displayedColumns: string[] = ['name', 'quantity'];
   public dataSource: Ingredient[] = [];
-
-  @Output() ingredientAddedToGroceryList = new EventEmitter<Ingredient[]>();
 
   ngOnInit(): void {
     this.getRouteParams();
@@ -47,7 +51,10 @@ export class RecipeDetailsComponent implements OnInit {
 
   private getRecipeById(id: number) {
     this.service.getAllRecipes().subscribe((recipes) => {
-      this.recipe = recipes.find((x) => x.id == id) || ({} as Recipe);
+      const allRecipes = recipes.map((item, index) => {
+        return { ...item, id: index + 1 };
+      });
+      this.recipe = allRecipes.find((x) => x.id == id) || ({} as Recipe);
       this.dataSource = this.recipe.Ingredients;
     });
   }
@@ -59,30 +66,4 @@ export class RecipeDetailsComponent implements OnInit {
   public goToSite() {
     window.open(this.recipe.recipe_url, '_blank');
   }
-
-  public addIngredientsToGroceryList() {
-    if (this.recipe && this.recipe.Ingredients) {
-      const ingredientsToSend = this.recipe.Ingredients.slice();
-      // Optional: Emit to GroceryService
-      // this.groceryService.addIngredients(ingredientsToSend);
-
-      // Emit to GroceryListComponent for potential local update
-      this.ingredientAddedToGroceryList.emit(ingredientsToSend);
-      this.showSnackbar();
-    }
-  }
-
-  private showSnackbar() {
-    const snackBarRef = this.snackBar.open(
-      `${this.recipe.recipe_name} added to grocery list`,
-      'Dismiss',
-      {
-        duration: 3000, // Milliseconds
-        horizontalPosition: 'center',
-        verticalPosition: 'bottom',
-      }
-    );
-  }
 }
-
-// I want to be able to add ingredients to grocery list

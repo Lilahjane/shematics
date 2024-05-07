@@ -5,14 +5,14 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">home</a>
+      <a mat-list-item [routerLink]="[ '/landingpage',  ]">home</a>
       <a mat-list-item  [routerLink]="[ '/home',  ]">recipes</a>
-      <a mat-list-item [routerLink]="[ '/grocery-list',  ]">grocery list</a>
+      <a mat-list-item [routerLink]="[ '/grocery-list',  ]">grocery list</a><!--its diffrent from when you had module.ts bs-->
       <a mat-list-item href="#">school</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary"><!--isHandset$ is if the screen is phone sized if not my critical thinking skills suck-->
       @if (isHandset$ | async) {
         <button
           type="button"
@@ -29,3 +29,4 @@
     
   </mat-sidenav-content>
 </mat-sidenav-container>
+<!--scss styling helps you see what everything is -->

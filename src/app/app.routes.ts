@@ -3,8 +3,13 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RecipeDetailsComponent } from './home/recipe-details/recipe-details.component';
 import { GroceryListComponent } from './home/grocery-list/grocery-list.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 export const routes: Routes = [
+    {
+        path: 'landingpage',
+        component: LandingPageComponent
+    },
     {
         path: 'grocery-list',
         component: GroceryListComponent

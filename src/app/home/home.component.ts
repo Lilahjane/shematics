@@ -14,7 +14,12 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { MatToolbar } from '@angular/material/toolbar';
+import { MatToolbarModule} from '@angular/material/toolbar';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {MatSliderModule} from '@angular/material/slider';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -35,7 +40,10 @@ import { MatToolbar } from '@angular/material/toolbar';
     MatInputModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatToolbar
+    MatToolbarModule,
+    MatExpansionModule,
+    CdkAccordionModule,
+    MatSliderModule
   ],
   providers:[RecipeService]
 })
@@ -49,6 +57,8 @@ export class HomeComponent implements OnInit {
   public recipes: Recipe[] = [];
   public visibleRecipes: Recipe[] = [];
   public activePage: number = 1;
+  panelOpenState = false;
+
 
   ngOnInit(): void {
     this.gerRecipes();
