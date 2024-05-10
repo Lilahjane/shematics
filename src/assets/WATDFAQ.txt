@@ -73,3 +73,53 @@ this finnaly working
 a school THAT HAS GOOGLE CLASSROOM API FOR FUCKS SAKE WHY DO I HAVE TO MAKE ANOTHER SCRAPER
 
 
+sorter variables
+time:
+5-10 min.
+10-15 min.
+20-30 min.
+25-35 min.
+30-40 min.
+35-45 min.
+40-50 min.
+45-50 min.
+45-55 min.
+50-60 min.
+
+difficulty 
+Easy
+Intermediate
+Expert
+
+spice 
+Not Spicy
+Mild
+Medium
+Spicy
+
+macros
+Calories
+Carbohydrates
+Net_carbs
+Fat
+Protein
+Sodium
+
+
+
+recipe_name
+recipe_photo
+recipe_url
+Calories
+Carbohydrates
+Net_Carbs
+Fat
+Protein
+Sodium
+Prep_Time
+Difficulty_Level
+Spice_Level
+Ingredients
+quantity
+unit
+ingredient

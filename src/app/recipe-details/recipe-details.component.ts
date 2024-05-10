@@ -2,21 +2,21 @@ import { Component, OnInit, inject } from '@angular/core';
 //unsure
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 //unsure
-import { RecipeService } from '../../recipe.service';
+import { RecipeService } from '../recipe.service';
 //RecipService is how my app is able to use my json
 import { MatTableModule } from '@angular/material/table';
 //displays ingredients as table
 import { HttpClientModule } from '@angular/common/http';
 //unsure what this does
-import { Recipe } from '../../recipe';
+import { Recipe } from '../recipe';
 //interface
 import { CommonModule } from '@angular/common';
 //unsure
 import { MatButtonModule } from '@angular/material/button';
 //mat component
-import { Ingredient } from '../../ingredient';
+import { Ingredient } from '../ingredient';
 //interface
-
+import { GroceryService } from '../grocery.service';
 @Component({
   selector: 'app-recipe-details',
   standalone: true,
@@ -27,7 +27,7 @@ import { Ingredient } from '../../ingredient';
     MatButtonModule,
     MatTableModule,
   ],
-  providers: [RecipeService],
+  providers: [RecipeService,GroceryService],
   templateUrl: './recipe-details.component.html',
   styleUrl: './recipe-details.component.scss',
 })
@@ -38,6 +38,17 @@ export class RecipeDetailsComponent implements OnInit {
   public recipe!: Recipe;
   public displayedColumns: string[] = ['name', 'quantity'];
   public dataSource: Ingredient[] = [];
+
+  ...
+  public addIngredients() {
+    const ingredientData: GroceryService = {
+      recipe_name: this.recipe.recipe_name,
+      ingredients: this.recipe.Ingredients,
+    };
+    this.groceryService.emitIngredientData(ingredientData);
+  }
+  ...
+  
 
   ngOnInit(): void {
     this.getRouteParams();

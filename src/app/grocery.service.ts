@@ -2,20 +2,21 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Ingredient } from './ingredient';
 
+export interface GroceryList {
+  recipeName: string;
+  ingredients: Ingredient[];
+  id: number;
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class GroceryService {
+  private groceryListSource = new BehaviorSubject<GroceryList | null>(null);
+  currentGroceryList = this.groceryListSource.asObservable();
 
-  private ingredientList = new BehaviorSubject<Ingredient[]>([]);
-  public currentIngredients: Observable<Ingredient[]> = this.ingredientList.asObservable();
-
-  constructor() { }
-
-  addIngredients(ingredients: Ingredient[]) {
-    // Logic to update the ingredient list
-    this.ingredientList.next(ingredients);
+  // Method to emit (send) the grocery list data
+  emitGroceryList(groceryList: GroceryList) {
+    this.groceryListSource.next(groceryList);
   }
-
-  // ... other methods for managing ingredients (optional)
 }
