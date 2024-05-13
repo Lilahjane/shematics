@@ -39,15 +39,8 @@ export class RecipeDetailsComponent implements OnInit {
   public displayedColumns: string[] = ['name', 'quantity'];
   public dataSource: Ingredient[] = [];
 
-  ...
-  public addIngredients() {
-    const ingredientData: GroceryService = {
-      recipe_name: this.recipe.recipe_name,
-      ingredients: this.recipe.Ingredients,
-    };
-    this.groceryService.emitIngredientData(ingredientData);
-  }
-  ...
+  
+
   
 
   ngOnInit(): void {
