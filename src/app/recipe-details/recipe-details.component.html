@@ -1,0 +1,47 @@
+<div class="details-wrapper">
+  @if (recipe) {
+  <div class="nutritional-info primary-color">
+    <h2>{{ recipe.recipe_name }}</h2>
+    <div class="nutri-info">Carbohydrates {{ recipe.Carbohydrates }}</div>
+    <div class="nutri-info">Net Carbs {{ recipe.NetCarbs }}</div>
+    <div class="nutri-info">Fat {{ recipe.Fat }}</div>
+    <div class="nutri-info">Protein {{ recipe.Protein }}</div>
+    <div class="nutri-info">Sodium {{ recipe.Sodium }}</div>
+  </div>
+
+  <div class="table-wrapper">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Ingredient</th>
+        <td mat-cell *matCellDef="let element">{{ element.ingredient }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef>Quantity</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.quantity }} {{ element.unit }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  }
+</div>
+
+<div class="navigation">
+  <button mat-raised-button color="accent" [routerLink]="['/home']">
+    Back
+  </button>
+  
+  <div class="details-wrapper">
+    <button mat-raised-button>
+     Add Ingredients
+    </button>
+  </div>
+
+  <button mat-raised-button (click)="goToSite()">Cook!</button>
+
+</div>
