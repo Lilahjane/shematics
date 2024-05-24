@@ -48,7 +48,7 @@ view{
     sucks bawls
     pros:
     WE HAVE A BACK BUTTON 
-    WE HAVE SNACK BAR 
+    WE HAVE SNACK BAR <we no longer have a snack bar but thats ok>
 
     cons:
     a back button that takes you back to page 1 not the page your currently on
@@ -129,3 +129,7 @@ ingredient
 recipe_details/1
 
 R_1
+
+
+SO CREATE NAMING CONVIENTIONS A CAPITAL I SHOULD NOT BE THE ONLY REASON YOUR CODE DOESNT WORK 
+DAMN YOU i 
