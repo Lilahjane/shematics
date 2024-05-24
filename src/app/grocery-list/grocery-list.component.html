@@ -1,12 +1,12 @@
 <div class="grid">
-  <mat-card *ngIf="recipeName">
+  <mat-card *ngFor=" let recipe of serviceG.currentGroceryList |async">
     <mat-card-header>
-      <mat-card-title>{{ recipeName }}</mat-card-title>
+      <mat-card-title>{{ recipe.recipe_name }}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
+      <!-- <p>{{recipe | json}}</p> -->
       <mat-list>
-        <h3>obj ingredient array</h3>
-        <mat-list-item *ngFor="let ingredient of ingredients">
+        <mat-list-item *ngFor="let ingredient of recipe.Ingredients">
           <span matListItemTitle>{{ ingredient.ingredient }}</span>
           <span matListItemLine>{{ ingredient.quantity }} {{ ingredient.unit }}</span>
         </mat-list-item>

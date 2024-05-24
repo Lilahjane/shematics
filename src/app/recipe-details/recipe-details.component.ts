@@ -1,3 +1,4 @@
+import { GroceryList } from './../grocery.service';
 import { Component, OnInit, inject } from '@angular/core';
 //unsure
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
@@ -27,7 +28,7 @@ import { GroceryService } from '../grocery.service';
     MatButtonModule,
     MatTableModule,
   ],
-  providers: [RecipeService,GroceryService],
+  providers: [RecipeService],
   templateUrl: './recipe-details.component.html',
   styleUrl: './recipe-details.component.scss',
 })
@@ -35,13 +36,16 @@ export class RecipeDetailsComponent implements OnInit {
   private routerParams = inject(ActivatedRoute);
   private router = inject(Router);
   private service = inject(RecipeService);
+  private serviceG = inject(GroceryService);
   public recipe!: Recipe;
   public displayedColumns: string[] = ['name', 'quantity'];
   public dataSource: Ingredient[] = [];
 
   
+public getfood(){
+this.serviceG.additems(this.recipe as any);
+}
 
-  
 
   ngOnInit(): void {
     this.getRouteParams();

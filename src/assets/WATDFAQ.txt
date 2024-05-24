@@ -123,3 +123,9 @@ Ingredients
 quantity
 unit
 ingredient
+
+
+
+recipe_details/1
+
+R_1

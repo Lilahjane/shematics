@@ -13,11 +13,7 @@ export interface Recipe {
     Prep_Time: string;
     Difficulty_Level: string;
     Spice_Level: string;
-    Ingredients: {
-        quantity: number;
-        unit: string;
-        ingredient: string;
-    }
+    Ingredients:[]
     class?: string;
     id: number;
   }
