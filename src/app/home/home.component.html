@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" class="toolbar">
+<!-- <mat-toolbar color="primary" class="toolbar">
   <mat-form-field>
     <mat-label>Prep_Time</mat-label>
     <mat-select>
@@ -36,9 +36,9 @@
       <mat-option value="option3">Option 3</mat-option>
     </mat-select>
   </mat-form-field>
-</mat-toolbar>
+</mat-toolbar> -->
 
-<mat-accordion multi>
+<!-- <mat-accordion multi>
   <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>Macros</mat-panel-title>
@@ -72,12 +72,19 @@
       </mat-toolbar-row>
     </mat-toolbar>
   </mat-expansion-panel>
-</mat-accordion>
+</mat-accordion> -->
 
 <!--broken: solution unknown??!?-->
   <!--dreams of code working have 2 toolbar rows one for macro sliders and other for selctors (how to clear selectors go back to no selectors selected)
   so macros have mg wtv so... format csv coloumn edit reformat all remove letters get mean median mode no <-*-*-*-*-*> that makes since how do I do tjat not a clue-->
 
+  <mat-toolbar color="primary" class="toolbar">
+    <mat-form-field>
+      <mat-label>Input</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <button mat-flat-button color="accent">Accent</button>
+  </mat-toolbar>
 
 <div class="nav-container"><!--nav-->
   <div class="grid">
