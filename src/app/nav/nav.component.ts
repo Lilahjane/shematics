@@ -9,6 +9,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 
 @Component({
@@ -25,10 +27,13 @@ import { map, shareReplay } from 'rxjs/operators';
     AsyncPipe,
     RouterOutlet,
     RouterLink,
+    MatExpansionModule
   ]
 })
 export class NavComponent {
+  panelOpenState = false;
   private breakpointObserver = inject(BreakpointObserver);
+  
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -36,3 +41,6 @@ export class NavComponent {
       shareReplay()
     );
 }
+
+// @ViewChild('drawer') drawer: MatSidenav | undefined;
+// }

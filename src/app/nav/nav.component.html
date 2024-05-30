@@ -3,15 +3,16 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>side nav</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item  [routerLink]="[ '/home',  ]">home</a>
-      <a mat-list-item href="#">recipes</a>
-      <a mat-list-item href="#">school</a>
+      <a mat-list-item [routerLink]="[ '/landingpage',  ]">home</a>
+      <a mat-list-item  [routerLink]="[ '/home',  ]">recipes</a><!--this and Grocery list should be a expandable menu-->
+      <a mat-list-item [routerLink]="[ '/grocery-list',  ]">grocery list</a><!--connection point-->
+      <a mat-list-item [routerLink]="[ '/testing',  ]" >test</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary"><!--isHandset$ is if the screen is phone sized if not my critical thinking skills suck-->
       @if (isHandset$ | async) {
         <button
           type="button"
@@ -21,10 +22,11 @@
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
       }
-      <span>shematics</span>
+      <span>My personal dashboard</span>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
     
   </mat-sidenav-content>
 </mat-sidenav-container>
+<!--scss styling helps you see what everything is -->

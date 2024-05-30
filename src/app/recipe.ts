@@ -13,7 +13,7 @@ export interface Recipe {
     Prep_Time: string;
     Difficulty_Level: string;
     Spice_Level: string;
-    Ingredients: Ingredient[];
+    Ingredients:[]
     class?: string;
     id: number;
   }
