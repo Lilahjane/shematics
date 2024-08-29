@@ -19,21 +19,20 @@ import { ITSeniorService } from '../itsenior.service';
     CommonModule,
     HttpClientModule
   ],
-  providers[ITSeniorService]
+  providers: [ITSeniorService]
 })
+
 export class NoeditComponent {
   private service = inject(ITSeniorService);
   public ITSenior: ITSenior[] = [];
 
   ngOnInit(): void {
-    this.service.getAllRecipes().subscribe((recipes) => {
-      this.initPagination(recipes);
-      this.setRecipes(recipes);
-      this.setPagination();
-    });
-  }
+    this.service.getAllAssignments().subscribe((IT_Seniors) => {
+      
+    }
+  )}
 
-  }
+  
 
 //   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 //   dataSource = ELEMENT_DATA;
