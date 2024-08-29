@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 import { GroceryListComponent } from './grocery-list/grocery-list.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { NoeditComponent } from '../noedit/noedit.component';
+import { NoeditComponent } from './school/noedit/noedit.component';
 
 export const routes: Routes = [
     {

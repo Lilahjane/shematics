@@ -133,3 +133,6 @@ R_1
 
 SO CREATE NAMING CONVIENTIONS A CAPITAL I SHOULD NOT BE THE ONLY REASON YOUR CODE DOESNT WORK 
 DAMN YOU i 
+
+git config --global user.email "you@example.com"
+    git config --global user.name "Lilahjane"
