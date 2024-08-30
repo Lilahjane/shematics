@@ -4,3 +4,69 @@ assignment tracker
 
 
 {{ element.Due_Date | date: 'EEE MMM d h:mm a' }} (BREAKS PAGINATION)
+set up filtering.
+
+3RD PERIOD FALL 2024
+AP CSP 2025
+ENG4-4
+IT Seniors
+DBA 2025
+GD 2025
+Data Science
+Class of 2025
+
+Jessica Hassler
+Mark Vukovic
+Jarrod Vaughn
+Phil Sikorski
+
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>IT Seniors</mat-card-title>
+      <mat-card-subtitle>Mark Vukovic</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>View assignments</button>
+      <button mat-button>To class</button>
+    </mat-card-actions>
+  </mat-card>
+
+  goood file structure 
+
+    utilities
+    nav
+    app.wtv
+
+  Food
+  grocerylist
+  grid
+  recipe-details 
+  serveices and interfaces
+
+
+  School
+  tabs
+  master list(table)
+  classes{
+    3RD PERIOD FALL 2024
+    AP CSP 2025
+    ENG4-4
+    IT Seniors
+    DBA 2025
+    GD 2025
+    Data Science
+    Class of 2025
+  }
+  d-board{
+    Scalendar
+    due today
+    due tmw
+    this week
+    quick links 
+    google drive intergration
+  }
+  Archive
+
+figure out how tables really work
+make view for each class
+make view for today tmw this week etc
