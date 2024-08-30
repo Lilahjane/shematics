@@ -5,6 +5,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { ITSenior } from '../itsenior';
 import { HttpClientModule } from '@angular/common/http';
 import { ITSeniorService } from '../itsenior.service';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-noedit',
@@ -16,14 +17,15 @@ import { ITSeniorService } from '../itsenior.service';
     MatTableModule,
     MatPaginatorModule,  // Import the MatPaginatorModule
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [ITSeniorService]
 })
 export class NoeditComponent implements OnInit, AfterViewInit {
   private service = inject(ITSeniorService);
 
-  displayedColumns: string[] = ['Title', 'Due_Date', 'Due_Time', 'Max_Points', 'Course', 'Assignment_Link'];
+  displayedColumns: string[] = ['Title', 'Due_Date',  'Max_Points', 'Course', 'Assignment_Link'];
   dataSource = new MatTableDataSource<ITSenior>();
 
   // ViewChild to access the paginator component

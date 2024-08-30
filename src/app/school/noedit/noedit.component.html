@@ -12,11 +12,7 @@
     <td mat-cell *matCellDef="let element"> {{element.Due_Date}} </td>
   </ng-container>
 
-  <!-- Due Time Column -->
-  <ng-container matColumnDef="Due_Time">
-    <th mat-header-cell *matHeaderCellDef> Due Time </th>
-    <td mat-cell *matCellDef="let element"> {{element.Due_Time}} </td>
-  </ng-container>
+  
 
   <!-- Max Points Column -->
   <ng-container matColumnDef="Max_Points">
@@ -33,7 +29,9 @@
   <!-- Assignment Link Column -->
   <ng-container matColumnDef="Assignment_Link">
     <th mat-header-cell *matHeaderCellDef> Assignment Link </th>
-    <td mat-cell *matCellDef="let element"> {{element.Assignment_Link}} </td>
+    <td mat-cell *matCellDef="let element">
+      <a [href]="element.Assignment_Link" target="_blank" mat-flat-button >Open Link</a>
+    </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

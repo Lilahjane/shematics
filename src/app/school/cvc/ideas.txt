@@ -1,0 +1,6 @@
+clendar
+classroom cards
+assignment tracker
+
+
+{{ element.Due_Date | date: 'EEE MMM d h:mm a' }} (BREAKS PAGINATION)

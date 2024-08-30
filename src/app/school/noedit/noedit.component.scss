@@ -1,21 +1,13 @@
-.grid-container {
-  margin: 20px;
+/* In noedit.component.scss or a global styles.css file */
+
+.mat-cell, .mat-header-cell {
+  white-space: nowrap;  /* Prevents text from wrapping */
+  padding: 8px 16px;    /* Adjust padding as needed to reduce row height */
+  overflow: hidden;     /* Ensures that overflowed content is hidden */
+  text-overflow: ellipsis; /* Adds ellipsis (...) if the text is too long */
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+.mat-row {
+  height: auto; /* Ensures that rows adapt to content size without extra space */
 }
 
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
-.dashboard-card-content {
-  text-align: center;
-}
