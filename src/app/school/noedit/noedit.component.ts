@@ -24,17 +24,18 @@ import { ITSeniorService } from '../itsenior.service';
 
 export class NoeditComponent {
   private service = inject(ITSeniorService);
-  public ITSenior: ITSenior[] = [];
 
-  ngOnInit(): void {
+  isplayedColumns: string[] = ['Title', 'Due_Date', 'Due_Time', 'Max_Points', 'Course', 'Assignment_Link',];
+
+  dataSource = New ;MatTableDataSource<IT_Seniors>();
+
+  ngOnInit(): void{
     this.service.getAllAssignments().subscribe((IT_Seniors) => {
-      
-    }
-  )}
+      this.dataSource.data = IT_Seniors;
+    });
+  }
 
-  
-
-//   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+//   displayedColumns: string[] = ['Title', 'Due_Date', 'Due_Time', 'Max_Points', 'Course', 'Assignment_link',];
 //   dataSource = ELEMENT_DATA;
 // ELEMENT_DATA: any;
 }
