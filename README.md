@@ -1,6 +1,8 @@
 # Shematics
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
+this project is the json base angular meal planning app currently angular webpack is unable to diplay photo url's
+you should be able to go to grocery list to view the recipes you added 
 
 ## Development server
 
@@ -13,7 +15,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-## what does that EVEN MEAN
+
+
 
 ## Running unit tests
 
