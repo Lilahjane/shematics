@@ -1,42 +1,6 @@
-<mat-toolbar color="primary" class="toolbar">
-  <mat-form-field>
-    <mat-label>Prep_Time</mat-label>
-    <mat-select>
-      <mat-option value="option1">5-15 min.</mat-option>
-      <mat-option value="option2">20-35 min.</mat-option>
-      <mat-option value="option3">30-45 min.</mat-option>
-      <mat-option value="option4">40-60 min.</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <span class="example-spacer"></span>
-  <mat-form-field>
-    <mat-label>Spice_Level</mat-label>
-    <mat-select>
-      <mat-option value="option1">Not spicy</mat-option>
-      <mat-option value="option2">Mild</mat-option>
-      <mat-option value="option3">Medium</mat-option>
-      <mat-option value="option4">Spicy</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <span class="example-spacer"></span>
-  <mat-form-field>
-    <mat-label>Choose an option</mat-label>
-    <mat-select>
-      <mat-option value="option1">Easy</mat-option>
-      <mat-option value="option2">Intermediate</mat-option>
-      <mat-option value="option3">Expert</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <span class="example-spacer"></span>
-  <mat-form-field>
-    <mat-label>Choose an option</mat-label>
-    <mat-select>
-      <mat-option value="option1">Option 1</mat-option>
-      <mat-option value="option2">hellp</mat-option>
-      <mat-option value="option3">Option 3</mat-option>
-    </mat-select>
-  </mat-form-field>
-</mat-toolbar> 
+
+
+
 
  <mat-accordion multi>
   <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle>
@@ -70,6 +34,45 @@
           <input value="400" matSliderEndThumb>
         </mat-slider>
       </mat-toolbar-row>
+    <mat-toolbar-row>
+      <mat-form-field>
+        <mat-label>Prep_Time</mat-label>
+        <mat-select>
+          <mat-option value="option1">5-15 min.</mat-option>
+          <mat-option value="option2">20-35 min.</mat-option>
+          <mat-option value="option3">30-45 min.</mat-option>
+          <mat-option value="option4">40-60 min.</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field>
+        <mat-label>Spice_Level</mat-label>
+        <mat-select>
+          <mat-option value="option1">Not spicy</mat-option>
+          <mat-option value="option2">Mild</mat-option>
+          <mat-option value="option3">Medium</mat-option>
+          <mat-option value="option4">Spicy</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field>
+        <mat-label>Choose an option</mat-label>
+        <mat-select>
+          <mat-option value="option1">Easy</mat-option>
+          <mat-option value="option2">Intermediate</mat-option>
+          <mat-option value="option3">Expert</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field>
+        <mat-label>Choose an option</mat-label>
+        <mat-select>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">hellp</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-toolbar-row>
     </mat-toolbar>
   </mat-expansion-panel>
 </mat-accordion>
